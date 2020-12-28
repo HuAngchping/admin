@@ -99,7 +99,7 @@ public class GenUtil {
         List<String> templates = getAdminTemplateNames();
         for (String templateName : templates) {
             Template template = engine.getTemplate("generator/admin/" + templateName + ".ftl");
-            String filePath = getAdminFilePath(templateName, genConfig, genMap.get("className").toString(), tempPath + "eladmin" + File.separator);
+            String filePath = getAdminFilePath(templateName, genConfig, genMap.get("className").toString(), tempPath + "sdk" + File.separator);
             assert filePath != null;
             File file = new File(filePath);
             // 如果非覆盖生成
